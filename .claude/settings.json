@@ -1,0 +1,10 @@
+{
+  "projectName": "devops-basic",
+  "description": "DevOps 운영 경험 기반 지식 베이스",
+  "version": "1.0.0",
+  "defaultModel": "claude-sonnet-4-5",
+  "customInstructions": "이 프로젝트는 DevOps 운영 경험 기반의 개인 지식 베이스입니다. 문서 작성 시 rules/doc-writing.md와 rules/devops-conventions.md를 반드시 준수하세요. 모든 코드 예시는 ap-northeast-2 리전 기준, Terraform provider ~> 5.0 기준으로 작성하세요.",
+  "permissions": {
+    "allowedTools": ["read", "write", "bash", "glob", "grep"]
+  }
+}
