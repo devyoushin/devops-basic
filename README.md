@@ -1,6 +1,6 @@
 # devops-basic
 
-CI/CD, GitOps, 배포 전략, IaC, DevSecOps 운영 경험을 정리한 개인 지식 베이스입니다.
+CI/CD, GitOps, 배포 전략, IaC, DevSecOps 운영 경험을 정리한 개인 지식 베이스입니다. Jenkins와 ArgoCD를 함께 사용하는 GitOps 기반 CI/CD 구축 흐름도 포함합니다.
 
 ## 어디서 시작할까
 
@@ -19,7 +19,7 @@ CI/CD, GitOps, 배포 전략, IaC, DevSecOps 운영 경험을 정리한 개인 �
 
 ## 학습 흐름
 
-1. `docs/cicd/`에서 GitHub Actions, ECR, 멀티 계정 파이프라인 이해
+1. `docs/cicd/`에서 Jenkins, GitHub Actions, ECR, 멀티 계정 파이프라인 이해
 2. `docs/gitops/`에서 ArgoCD와 GitOps 운영 방식 학습
 3. `docs/deployment/`에서 배포 전략과 Helm 릴리스 관리 학습
 4. `docs/iac/`, `docs/security/`에서 Terraform 자동화와 DevSecOps 확장
