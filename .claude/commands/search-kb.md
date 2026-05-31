@@ -37,9 +37,9 @@
 
 | 문서 | 관련 섹션 | 관련도 |
 |------|-----------|--------|
-| [cicd-multi-account-architecture.md](docs/cicd/cicd-multi-account-architecture.md) | 3-3. GitHub OIDC 방식 | ★★★ |
-| [cicd-github-actions-ecr.md](docs/cicd/cicd-github-actions-ecr.md) | 2. OIDC 방식 | ★★★ |
-| [secrets-in-pipeline.md](docs/security/secrets-in-pipeline.md) | 3. OIDC로 AWS 인증 | ★★ |
+| [cicd-multi-account-architecture.md](../../docs/cicd/cicd-multi-account-architecture.md) | 3-3. GitHub OIDC 방식 | ★★★ |
+| [cicd-github-actions-ecr.md](../../docs/cicd/cicd-github-actions-ecr.md) | 2. OIDC 방식 | ★★★ |
+| [secrets-in-pipeline.md](../../docs/security/secrets-in-pipeline.md) | 3. OIDC로 AWS 인증 | ★★ |
 
 ### 핵심 내용 요약
 

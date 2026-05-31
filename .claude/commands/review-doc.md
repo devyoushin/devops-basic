@@ -34,7 +34,7 @@
 - [ ] 트러블슈팅 최소 2개 이상 포함 여부
 - [ ] 모니터링 섹션에 실제 명령어/설정 포함 여부
 
-### 보안 검토 (`rules/security-checklist.md` 기준)
+### 보안 검토 (`docs/rules/security-checklist.md` 기준)
 
 - [ ] Access Key 하드코딩 없는지
 - [ ] OIDC 방식 권장 여부
@@ -42,7 +42,7 @@
 - [ ] `latest` 태그 사용 금지 준수 여부
 - [ ] 보안 고려사항 섹션 포함 여부
 
-### 문체 검토 (`rules/doc-writing.md` 기준)
+### 문체 검토 (`docs/rules/doc-writing.md` 기준)
 
 - [ ] 명사형 종결어미 사용 (`~함`, `~사용`)
 - [ ] 추측성 표현 없는지 (`~할 수 있습니다` 금지)

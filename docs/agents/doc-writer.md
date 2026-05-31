@@ -21,9 +21,9 @@ DevOps 운영 경험 기반의 기술 문서를 작성하는 전문 에이전트
 
 ### 반드시 따라야 할 규칙
 
-1. **`rules/doc-writing.md`** 모든 규칙 준수
-2. **`rules/devops-conventions.md`** 코드 컨벤션 준수
-3. **`rules/security-checklist.md`** 보안 사항 반드시 포함
+1. **`docs/rules/doc-writing.md`** 모든 규칙 준수
+2. **`docs/rules/devops-conventions.md`** 코드 컨벤션 준수
+3. **`docs/rules/security-checklist.md`** 보안 사항 반드시 포함
 
 ### 코드 예시 기준
 
@@ -88,10 +88,10 @@ ArgoCD Notifications (Slack 알림) 섹션을 추가해줘."
 
 작성 전 아래 문서를 먼저 확인:
 
-- `rules/doc-writing.md` — 문서 스타일 가이드
-- `rules/devops-conventions.md` — 코드 컨벤션
-- `rules/security-checklist.md` — 보안 체크리스트
-- `templates/service-doc.md` — 새 문서 템플릿
+- `docs/rules/doc-writing.md` — 문서 스타일 가이드
+- `docs/rules/devops-conventions.md` — 코드 컨벤션
+- `docs/rules/security-checklist.md` — 보안 체크리스트
+- `docs/templates/service-doc.md` — 새 문서 템플릿
 
 ---
 
@@ -99,6 +99,6 @@ ArgoCD Notifications (Slack 알림) 섹션을 추가해줘."
 
 새 문서 작성 시:
 1. 파일 경로 먼저 제안 (`docs/{카테고리}/{서비스}-{주제}.md`)
-2. `templates/service-doc.md` 기반으로 작성
+2. `docs/templates/service-doc.md` 기반으로 작성
 3. 실제 실행 가능한 코드 예시 포함
 4. 관련 문서 링크로 마무리

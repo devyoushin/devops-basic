@@ -15,16 +15,16 @@ devops-basic/
 │   ├── iac/         (1개)         # Terraform CI/CD 자동화
 │   └── security/    (2개)         # DevSecOps, Secrets 관리
 │
-├── rules/                         # Claude 작성 규칙
+├── docs/rules/                         # Claude 작성 규칙
 │   ├── doc-writing.md             # 문서 스타일 가이드
 │   ├── devops-conventions.md      # GitHub Actions/Helm/Terraform 코드 규칙
 │   └── security-checklist.md     # DevOps 보안 체크리스트
 │
-├── templates/                     # 재사용 문서 템플릿
+├── docs/templates/                     # 재사용 문서 템플릿
 │   ├── service-doc.md             # 서비스 문서 스캐폴딩
 │   └── runbook.md                 # 운영 Runbook
 │
-├── agents/                        # Claude 전문 에이전트
+├── docs/agents/                        # Claude 전문 에이전트
 │   ├── doc-writer.md              # DevOps 문서 작성 에이전트
 │   └── pipeline-advisor.md       # CI/CD 파이프라인 설계/검토 에이전트
 │
@@ -70,7 +70,7 @@ docs/{카테고리}/{서비스}-{주제}.md
 5. **보안 우선** — 최소 권한, Secrets 노출 방지, OIDC 방식 권장
 6. **모니터링 포함** — 파이프라인 실패 알림, 배포 상태 모니터링 포함
 
-세부 규칙은 `rules/` 디렉토리를 참조.
+세부 규칙은 `docs/rules/` 디렉토리를 참조.
 
 ---
 
