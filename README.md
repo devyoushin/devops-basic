@@ -6,7 +6,7 @@ CI/CD, GitOps, 배포 전략, IaC, DevSecOps 운영 경험을 정리한 개인 �
 
 - 문서 지도: `docs/README.md`
 - 운영/실습 자산: `ops/README.md`
-- AI 작업 지침: `CLAUDE.md`
+- AI 작업 지침: `CLAUDE.md`, `AGENTS.md -> CLAUDE.md`
 
 ## 구조
 
@@ -15,7 +15,8 @@ CI/CD, GitOps, 배포 전략, IaC, DevSecOps 운영 경험을 정리한 개인 �
 | `docs/` | CI/CD, GitOps, 배포, IaC, 보안 문서와 에이전트/규칙/템플릿 |
 | `ops/` | 향후 파이프라인 예제, Helm/Terraform/GitOps 실습 자산 |
 | `.claude/` | Claude Code 커맨드와 설정 |
-| `CLAUDE.md` | Claude 작업 지침 |
+| `CLAUDE.md` | Claude/Codex 공통 작업 지침 원본 |
+| `AGENTS.md -> CLAUDE.md` | Codex/agent 작업 지침 링크 |
 
 ## 학습 흐름
 
