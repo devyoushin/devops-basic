@@ -21,9 +21,9 @@ DevOps 운영 경험 기반의 기술 문서를 작성하는 전문 에이전트
 
 ### 반드시 따라야 할 규칙
 
-1. **`docs/rules/doc-writing.md`** 모든 규칙 준수
-2. **`docs/rules/devops-conventions.md`** 코드 컨벤션 준수
-3. **`docs/rules/security-checklist.md`** 보안 사항 반드시 포함
+1. **`docs/90-standards/doc-writing.md`** 모든 규칙 준수
+2. **`docs/90-standards/devops-conventions.md`** 코드 컨벤션 준수
+3. **`docs/90-standards/security-checklist.md`** 보안 사항 반드시 포함
 
 ### 코드 예시 기준
 
@@ -61,7 +61,7 @@ DevOps 운영 경험 기반의 기술 문서를 작성하는 전문 에이전트
 ### 신규 문서 작성 요청
 
 ```
-"docs/cicd/ 에 GitLab CI + ECR 파이프라인 문서를 작성해줘.
+"docs/01-cicd/ 에 GitLab CI + ECR 파이프라인 문서를 작성해줘.
 다음 내용을 포함해야 해:
 - GitLab OIDC AWS 인증
 - Docker build + ECR push
@@ -71,14 +71,14 @@ DevOps 운영 경험 기반의 기술 문서를 작성하는 전문 에이전트
 ### 기존 문서 보강 요청
 
 ```
-"docs/gitops/argocd-eks-deployment.md 에
+"docs/02-gitops/argocd-eks-deployment.md 에
 ArgoCD Notifications (Slack 알림) 섹션을 추가해줘."
 ```
 
 ### 트러블슈팅 추가 요청
 
 ```
-"docs/cicd/cicd-github-actions-ecr.md 에
+"docs/01-cicd/cicd-github-actions-ecr.md 에
 'ECR rate limit 초과' 트러블슈팅을 추가해줘."
 ```
 
@@ -88,10 +88,10 @@ ArgoCD Notifications (Slack 알림) 섹션을 추가해줘."
 
 작성 전 아래 문서를 먼저 확인:
 
-- `docs/rules/doc-writing.md` — 문서 스타일 가이드
-- `docs/rules/devops-conventions.md` — 코드 컨벤션
-- `docs/rules/security-checklist.md` — 보안 체크리스트
-- `docs/templates/service-doc.md` — 새 문서 템플릿
+- `docs/90-standards/doc-writing.md` — 문서 스타일 가이드
+- `docs/90-standards/devops-conventions.md` — 코드 컨벤션
+- `docs/90-standards/security-checklist.md` — 보안 체크리스트
+- `docs/91-templates/service-doc.md` — 새 문서 템플릿
 
 ---
 
@@ -99,6 +99,6 @@ ArgoCD Notifications (Slack 알림) 섹션을 추가해줘."
 
 새 문서 작성 시:
 1. 파일 경로 먼저 제안 (`docs/{카테고리}/{서비스}-{주제}.md`)
-2. `docs/templates/service-doc.md` 기반으로 작성
+2. `docs/91-templates/service-doc.md` 기반으로 작성
 3. 실제 실행 가능한 코드 예시 포함
 4. 관련 문서 링크로 마무리

@@ -506,5 +506,5 @@ argocd app get my-app-prod
 
 **관련 문서**
 - [배포 전략](./deployment-strategies.md)
-- [ArgoCD EKS 배포](../gitops/argocd-eks-deployment.md)
-- [App of Apps 패턴](../gitops/argocd-app-of-apps.md)
+- [ArgoCD EKS 배포](../02-gitops/argocd-eks-deployment.md)
+- [App of Apps 패턴](../02-gitops/argocd-app-of-apps.md)

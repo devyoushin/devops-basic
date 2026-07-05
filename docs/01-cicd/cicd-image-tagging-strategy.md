@@ -412,4 +412,4 @@ LABEL org.opencontainers.image.revision="${GIT_SHA}" \
 **관련 문서**
 - [멀티 계정 CI/CD 아키텍처](./cicd-multi-account-architecture.md)
 - [GitHub Actions + ECR 파이프라인](./cicd-github-actions-ecr.md)
-- [DevSecOps 이미지 스캔](../security/devsecops-image-scan.md)
+- [DevSecOps 이미지 스캔](../05-security/devsecops-image-scan.md)

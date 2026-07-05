@@ -420,5 +420,5 @@ on:
 
 **관련 문서**
 - [Secrets 관리](./secrets-in-pipeline.md)
-- [이미지 태깅 전략](../cicd/cicd-image-tagging-strategy.md)
-- [GitHub Actions + ECR 파이프라인](../cicd/cicd-github-actions-ecr.md)
+- [이미지 태깅 전략](../01-cicd/cicd-image-tagging-strategy.md)
+- [GitHub Actions + ECR 파이프라인](../01-cicd/cicd-github-actions-ecr.md)

@@ -467,5 +467,5 @@ aws accessanalyzer list-findings \
 
 **관련 문서**
 - [DevSecOps 이미지 스캔](./devsecops-image-scan.md)
-- [멀티 계정 CI/CD 아키텍처](../cicd/cicd-multi-account-architecture.md)
-- [GitHub Actions + ECR 파이프라인](../cicd/cicd-github-actions-ecr.md)
+- [멀티 계정 CI/CD 아키텍처](../01-cicd/cicd-multi-account-architecture.md)
+- [GitHub Actions + ECR 파이프라인](../01-cicd/cicd-github-actions-ecr.md)

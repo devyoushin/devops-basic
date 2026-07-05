@@ -573,5 +573,5 @@ terraform state pull > terraform.tfstate.backup.$(date +%Y%m%d%H%M%S)
 **TIP 3**: PR마다 plan 결과가 PR comment에 자동으로 달리면 인프라 변경 리뷰가 코드 리뷰와 동일 맥락에서 가능. Atlantis 방식이 이 UX를 기본 제공.
 
 **관련 문서**
-- [멀티 계정 CI/CD 아키텍처](../cicd/cicd-multi-account-architecture.md)
-- [DevSecOps 보안 체크리스트](../security/secrets-in-pipeline.md)
+- [멀티 계정 CI/CD 아키텍처](../01-cicd/cicd-multi-account-architecture.md)
+- [DevSecOps 보안 체크리스트](../05-security/secrets-in-pipeline.md)

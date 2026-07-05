@@ -96,7 +96,7 @@ ECR push에 필요한 최소 권한만 부여. `ecr:GetAuthorizationToken`은 IA
 
 resource "aws_iam_user" "cicd_user" {
   name = "cicd-user"
-  path = "/cicd/"
+  path = "/01-cicd/"
 
   tags = {
     Purpose     = "CICD pipeline ECR push"
@@ -202,7 +202,7 @@ resource "aws_ecr_repository_policy" "cross_account_push" {
         Sid    = "AllowCICDAccountPush"
         Effect = "Allow"
         Principal = {
-          AWS = "arn:aws:iam::<CICD_ACCOUNT_ID>:user/cicd/cicd-user"
+          AWS = "arn:aws:iam::<CICD_ACCOUNT_ID>:user/01-cicd/cicd-user"
         }
         Action = [
           "ecr:BatchCheckLayerAvailability",
@@ -424,7 +424,7 @@ aws ecr get-login-password --region ap-northeast-2 | \
 ### 증상 2: ECR cross-account push 시 403 Access Denied
 
 ```
-Error response from daemon: denied: User: arn:aws:iam::<CICD_ACCOUNT_ID>:user/cicd/cicd-user
+Error response from daemon: denied: User: arn:aws:iam::<CICD_ACCOUNT_ID>:user/01-cicd/cicd-user
 is not authorized to perform: ecr:InitiateLayerUpload
 ```
 
@@ -540,4 +540,4 @@ aws ecr put-image \
 **관련 문서**
 - [GitHub Actions + ECR 파이프라인](./cicd-github-actions-ecr.md)
 - [이미지 태깅 전략](./cicd-image-tagging-strategy.md)
-- [ArgoCD EKS 배포 및 IRSA](../gitops/argocd-eks-deployment.md)
+- [ArgoCD EKS 배포 및 IRSA](../02-gitops/argocd-eks-deployment.md)

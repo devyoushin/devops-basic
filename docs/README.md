@@ -1,26 +1,14 @@
-# DevOps Docs
+# devops-basic 문서
 
-DevOps 학습 문서는 운영 주제별로 나눠 관리합니다.
+이 디렉토리는 주제별 번호 체계로 문서를 정리합니다. 앞 번호는 학습과 운영 흐름을 나타내며, 90번대는 저장소 관리용 문서입니다.
 
-| 폴더 | 내용 |
-|------|------|
-| `cicd/` | CI/CD 파이프라인, Jenkins, GitHub Actions, 이미지 태깅, 멀티 계정 배포 |
-| `gitops/` | ArgoCD, GitOps 워크플로우, App of Apps |
-| `deployment/` | 배포 전략, Helm 릴리스 관리 |
-| `iac/` | Terraform CI/CD 워크플로우 |
-| `security/` | DevSecOps, 이미지 스캔, 파이프라인 Secret 관리 |
-| `agents/` | AI 전문 에이전트 프롬프트 |
-| `rules/` | 문서 작성과 DevOps 운영 규칙 |
-| `templates/` | 재사용 문서 템플릿 |
+## 문서 구조
 
-실행 가능한 예제와 자동화 자산은 `../ops/README.md`를 참고합니다.
-
-## 추천 학습 순서
-
-| 순서 | 문서 | 목적 |
-|------|------|------|
-| 1 | `cicd/cicd-image-tagging-strategy.md` | 불변 이미지 태그 기준 이해 |
-| 2 | `gitops/gitops-workflow.md` | GitOps 배포 흐름 이해 |
-| 3 | `cicd/jenkins-argocd-cicd.md` | Jenkins와 ArgoCD 기반 CI/CD 구축 |
-| 4 | `gitops/argocd-eks-deployment.md` | ArgoCD EKS 운영과 IRSA 인증 이해 |
-| 5 | `security/devsecops-image-scan.md` | 이미지 스캔과 보안 게이트 적용 |
+- [01-cicd](./01-cicd/): CI/CD - 빌드, 이미지 태깅, 멀티 계정 CI/CD 문서를 모읍니다.
+- [02-gitops](./02-gitops/): GitOps - Argo CD와 GitOps 워크플로우 문서를 모읍니다.
+- [03-deployment](./03-deployment/): 배포 전략 - 배포 전략과 Helm 릴리스 관리 문서를 모읍니다.
+- [04-iac](./04-iac/): Infrastructure as Code - Terraform 기반 인프라 자동화 문서를 모읍니다.
+- [05-security](./05-security/): DevSecOps - 이미지 스캔과 파이프라인 보안 문서를 모읍니다.
+- [90-standards](./90-standards/): 문서 작성 표준 - 저장소 문서 작성 규칙과 운영 기준을 관리합니다.
+- [91-templates](./91-templates/): 문서 템플릿 - 반복해서 사용하는 문서 템플릿을 관리합니다.
+- [99-agents](./99-agents/): AI 에이전트 가이드 - DevOps 문서와 파이프라인 설계에 활용할 에이전트 역할 정의를 관리합니다.

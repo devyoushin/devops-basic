@@ -478,5 +478,5 @@ metrics:
 
 **관련 문서**
 - [Helm 릴리스 관리](./helm-release-management.md)
-- [ArgoCD EKS 배포](../gitops/argocd-eks-deployment.md)
-- [GitOps 워크플로우](../gitops/gitops-workflow.md)
+- [ArgoCD EKS 배포](../02-gitops/argocd-eks-deployment.md)
+- [GitOps 워크플로우](../02-gitops/gitops-workflow.md)

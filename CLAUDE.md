@@ -15,16 +15,16 @@ devops-basic/
 │   ├── iac/         (1개)         # Terraform CI/CD 자동화
 │   └── security/    (2개)         # DevSecOps, Secrets 관리
 │
-├── docs/rules/                         # Claude 작성 규칙
+├── docs/90-standards/                         # Claude 작성 규칙
 │   ├── doc-writing.md             # 문서 스타일 가이드
 │   ├── devops-conventions.md      # GitHub Actions/Helm/Terraform 코드 규칙
 │   └── security-checklist.md     # DevOps 보안 체크리스트
 │
-├── docs/templates/                     # 재사용 문서 템플릿
+├── docs/91-templates/                     # 재사용 문서 템플릿
 │   ├── service-doc.md             # 서비스 문서 스캐폴딩
 │   └── runbook.md                 # 운영 Runbook
 │
-├── docs/agents/                        # Claude 전문 에이전트
+├── docs/99-agents/                        # Claude 전문 에이전트
 │   ├── doc-writer.md              # DevOps 문서 작성 에이전트
 │   └── pipeline-advisor.md       # CI/CD 파이프라인 설계/검토 에이전트
 │
@@ -43,7 +43,7 @@ devops-basic/
 | 커맨드 | 사용법 | 설명 |
 |--------|--------|------|
 | `/new-doc` | `/new-doc cicd github-oidc` | 신규 서비스 문서 스캐폴딩 생성 |
-| `/review-doc` | `/review-doc docs/cicd/cicd-multi-account-architecture.md` | 문서 품질 검토 및 개선안 제시 |
+| `/review-doc` | `/review-doc docs/01-cicd/cicd-multi-account-architecture.md` | 문서 품질 검토 및 개선안 제시 |
 | `/search-kb` | `/search-kb ArgoCD IRSA` | 지식 베이스 키워드 검색 및 관련 문서 목록 반환 |
 
 ---
@@ -57,7 +57,7 @@ docs/{카테고리}/{서비스}-{주제}.md
 - 카테고리: `cicd`, `gitops`, `deployment`, `iac`, `security`
 - 서비스 약어: `cicd`, `argocd`, `helm`, `terraform`, `github-actions`
 - 주제: 소문자 영어, 하이픈 구분
-- 예시: `docs/cicd/cicd-github-actions-ecr.md`, `docs/gitops/argocd-eks-deployment.md`
+- 예시: `docs/01-cicd/cicd-github-actions-ecr.md`, `docs/02-gitops/argocd-eks-deployment.md`
 
 ---
 
@@ -70,7 +70,7 @@ docs/{카테고리}/{서비스}-{주제}.md
 5. **보안 우선** — 최소 권한, Secrets 노출 방지, OIDC 방식 권장
 6. **모니터링 포함** — 파이프라인 실패 알림, 배포 상태 모니터링 포함
 
-세부 규칙은 `docs/rules/` 디렉토리를 참조.
+세부 규칙은 `docs/90-standards/` 디렉토리를 참조.
 
 ---
 
@@ -101,32 +101,32 @@ docs/{카테고리}/{서비스}-{주제}.md
 
 ## 카테고리별 문서 목록
 
-### docs/cicd/
+### docs/01-cicd/
 | 파일 | 주제 |
 |------|------|
 | `cicd-multi-account-architecture.md` | 멀티 계정 CI/CD 아키텍처 전체 (★ 핵심 문서) |
 | `cicd-github-actions-ecr.md` | GitHub Actions + ECR 파이프라인 구성 |
 | `cicd-image-tagging-strategy.md` | Docker 이미지 태깅 전략 및 ECR Lifecycle |
 
-### docs/gitops/
+### docs/02-gitops/
 | 파일 | 주제 |
 |------|------|
 | `argocd-eks-deployment.md` | ArgoCD EKS 배포 및 IRSA 인증 (★ 핵심 문서) |
 | `argocd-app-of-apps.md` | App of Apps 패턴, ApplicationSet 멀티 환경 관리 |
 | `gitops-workflow.md` | GitOps 원칙, Branch 전략, 롤백 방법 |
 
-### docs/deployment/
+### docs/03-deployment/
 | 파일 | 주제 |
 |------|------|
 | `deployment-strategies.md` | Rolling/Blue-Green/Canary 비교 및 구현 |
 | `helm-release-management.md` | Helm chart 구조, 환경별 values.yaml, ArgoCD 연동 |
 
-### docs/iac/
+### docs/04-iac/
 | 파일 | 주제 |
 |------|------|
 | `terraform-cicd-workflow.md` | Terraform 자동화, Atlantis, Remote State |
 
-### docs/security/
+### docs/05-security/
 | 파일 | 주제 |
 |------|------|
 | `devsecops-image-scan.md` | 컨테이너 이미지 스캔 (ECR Inspector, Trivy) |
@@ -136,8 +136,8 @@ docs/{카테고리}/{서비스}-{주제}.md
 
 ## 추가 예정 주제 (백로그)
 
-- `docs/cicd/cicd-gitlab-cicd.md` — GitLab CI/CD 파이프라인 구성
-- `docs/gitops/argocd-notifications.md` — ArgoCD 알림 (Slack, PagerDuty)
-- `docs/deployment/deployment-verification.md` — 배포 검증 (Smoke Test, Canary 분석)
-- `docs/iac/crossplane-vs-terraform.md` — Crossplane vs Terraform 비교
-- `docs/security/sbom-supply-chain.md` — SBOM 생성, Supply Chain 보안
+- `docs/01-cicd/cicd-gitlab-cicd.md` — GitLab CI/CD 파이프라인 구성
+- `docs/02-gitops/argocd-notifications.md` — ArgoCD 알림 (Slack, PagerDuty)
+- `docs/03-deployment/deployment-verification.md` — 배포 검증 (Smoke Test, Canary 분석)
+- `docs/04-iac/crossplane-vs-terraform.md` — Crossplane vs Terraform 비교
+- `docs/05-security/sbom-supply-chain.md` — SBOM 생성, Supply Chain 보안

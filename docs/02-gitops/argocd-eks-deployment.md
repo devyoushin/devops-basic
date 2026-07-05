@@ -660,4 +660,4 @@ argocd app wait my-app-prod \
 **관련 문서**
 - [App of Apps 패턴](./argocd-app-of-apps.md)
 - [GitOps 워크플로우](./gitops-workflow.md)
-- [멀티 계정 CI/CD 아키텍처](../cicd/cicd-multi-account-architecture.md)
+- [멀티 계정 CI/CD 아키텍처](../01-cicd/cicd-multi-account-architecture.md)

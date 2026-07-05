@@ -398,4 +398,4 @@ argocd app sync my-app-prod --force
 **관련 문서**
 - [ArgoCD EKS 배포 및 IRSA](./argocd-eks-deployment.md)
 - [App of Apps 패턴](./argocd-app-of-apps.md)
-- [GitHub Actions + ECR 파이프라인](../cicd/cicd-github-actions-ecr.md)
+- [GitHub Actions + ECR 파이프라인](../01-cicd/cicd-github-actions-ecr.md)

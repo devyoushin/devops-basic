@@ -467,4 +467,4 @@ GitHub > Settings > Developer settings > Personal access tokens
 **관련 문서**
 - [멀티 계정 CI/CD 아키텍처](./cicd-multi-account-architecture.md)
 - [이미지 태깅 전략](./cicd-image-tagging-strategy.md)
-- [Secrets 관리](../security/secrets-in-pipeline.md)
+- [Secrets 관리](../05-security/secrets-in-pipeline.md)

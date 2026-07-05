@@ -75,10 +75,10 @@ spec:
       selfHeal: true
 ```
 
-### 2-3. 개별 Application 템플릿 (apps/templates/my-app.yaml)
+### 2-3. 개별 Application 템플릿 (apps/91-templates/my-app.yaml)
 
 ```yaml
-# apps/templates/my-app.yaml
+# apps/91-templates/my-app.yaml
 
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -397,4 +397,4 @@ kubectl get applications -n argocd -l argocd.argoproj.io/app-set-name=my-app-env
 **관련 문서**
 - [ArgoCD EKS 배포 및 IRSA](./argocd-eks-deployment.md)
 - [GitOps 워크플로우](./gitops-workflow.md)
-- [Helm 릴리스 관리](../deployment/helm-release-management.md)
+- [Helm 릴리스 관리](../03-deployment/helm-release-management.md)

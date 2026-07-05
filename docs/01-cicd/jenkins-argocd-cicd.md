@@ -542,9 +542,9 @@ spec:
 | Jenkins/ArgoCD 실패 알람이 Slack 또는 PagerDuty로 전달됨 | 예 |
 
 **관련 문서**
-- GitOps 워크플로우: `../gitops/gitops-workflow.md`
-- ArgoCD EKS 배포 및 IRSA 인증: `../gitops/argocd-eks-deployment.md`
-- ArgoCD App of Apps: `../gitops/argocd-app-of-apps.md`
+- GitOps 워크플로우: `../02-gitops/gitops-workflow.md`
+- ArgoCD EKS 배포 및 IRSA 인증: `../02-gitops/argocd-eks-deployment.md`
+- ArgoCD App of Apps: `../02-gitops/argocd-app-of-apps.md`
 - 이미지 태깅 전략: `cicd-image-tagging-strategy.md`
 - 멀티 계정 CI/CD 아키텍처: `cicd-multi-account-architecture.md`
-- DevSecOps 이미지 스캔: `../security/devsecops-image-scan.md`
+- DevSecOps 이미지 스캔: `../05-security/devsecops-image-scan.md`
